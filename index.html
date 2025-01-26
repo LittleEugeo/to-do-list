@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="wrapper">
+        <h1 class="wrapper__title">To do List</h1>
+        <div class="wrapper__add">
+            <input id="input-add" type="text" placeholder="add task">
+            <button id="btn-add">+</button>
+        </div>
+        <section class="wrapper__task">
+            <div class="task">
+                <div class="task__separator">
+                    <input id="input-status" type="checkbox">
+                    <p id="task-description">Learn Visual Studio Code</p>
+                </div>
+                <div class="task__buttons">
+                    <button id="btn-edit"><span class="line-md--edit"></span></button>
+                    <button id="btn-delete"><span class="line-md--beer-alt-filled-loop"></span></button>
+                </div>
+            </div>
+            <div class="task">
+                <div class="task__separator">
+                    <input id="input-status" type="checkbox">
+                    <p id="task-description">See the NodeJS course</p>
+                </div>
+                <div class="task__buttons">
+                    <button id="btn-edit"><span class="line-md--edit"></span></button>
+                    <button id="btn-delete"><span class="line-md--beer-alt-filled-loop"></span></button>
+                </div>
+            </div>
+            <div class="task">
+                <div class="task__separator">
+                    <input id="input-status" type="checkbox">
+                    <p id="task-description">Go to english class V</p>
+                </div>
+                <div class="task__buttons">
+                    <button id="btn-edit"><span class="line-md--edit"></span></button>
+                    <button id="btn-delete"><span class="line-md--beer-alt-filled-loop"></span></button>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper__task__counter">
+            <p class="counter__pending">Pending tasks: <span id="pending-tasks">0</span></p>
+            <div class="counter__detail"></div>
+            <p class="counter__completed">Completed tasks: <span id="Completed-tasks">0</span></p>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
